@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         input_text.setText(null);
                         break;
                     case 5:
+                        input_text.setText(null);
                         output_text.setText(arr[random.nextInt(5)]);
                         break;
                 }
