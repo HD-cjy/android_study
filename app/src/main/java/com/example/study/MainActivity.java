@@ -14,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        activity = this;
         setContentView(R.layout.activity_main);
         EditText input_text= findViewById(R.id.input_text);
         Button input_btn= findViewById(R.id.input_btn);
+        Button next = findViewById(R.id.next);
         TextView box1= findViewById(R.id.box1);
         TextView box2= findViewById(R.id.box2);
         TextView box3= findViewById(R.id.box3);
@@ -68,5 +70,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity,ImageRandomView.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
+
+    public MainActivity()
+    {
+        super();
+    }
+    private MainActivity activity;
 }
