@@ -45,15 +45,24 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="vertical">
-      <EditText
-          android:layout_weight="2"
-          android:layout_width="match_parent"
-          android:layout_height="1dp"
-          android:text="계산결과가 보여질 곳"
-          android:textSize="30sp"
-          android:textColor="@color/black">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="계산결과가 보여질 곳"
+            android:textSize="30sp"
+            android:textColor="@color/black">
 
-      </EditText>
+        </TextView>
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="계산결과가 보여질 곳"
+            android:textSize="30sp"
+            android:textColor="@color/black">
+
+        </TextView>
     </LinearLayout>
     <LinearLayout
         android:layout_weight="0.2"
